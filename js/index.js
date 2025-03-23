@@ -40,7 +40,7 @@ onValue(shoppingListInDB, function (snapshot) {
     if (snapshot.exists()) {
 
         let itemsArray = Object.entries(snapshot.val())
-        itemsArray.reverse()
+        // itemsArray.reverse()
         console.log("Array: " + itemsArray)
 
         clearShoppingListEl()
